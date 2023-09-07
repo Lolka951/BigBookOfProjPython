@@ -69,7 +69,7 @@ def rightdigits(user_number, secretnumber):
         result = 'Bagels'
     elif fermi_count == length:
         result = 'right'
-    return result.sort() # Сортируем подсказки, чтобы не выдавать исходное положение
+    return result # Сортируем подсказки, чтобы не выдавать исходное положение .sort()
 
 def main():
     secretnumber_for_user = int(randomnumber(count_number))  ## Загадываем число
@@ -96,4 +96,4 @@ def main():
         else:
             print('Игра завершена!')
 
-main()
+ main()
